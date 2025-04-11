@@ -1,5 +1,5 @@
 {
-  "name": "react-native-biometric-auth",
+  "name": "react-native-nitro-biometrics",
   "version": "0.1.0",
   "description": "Nitro module package",
   "main": "./lib/commonjs/index.js",

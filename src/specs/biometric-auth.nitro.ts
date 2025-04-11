@@ -1,5 +1,8 @@
 import { type HybridObject } from 'react-native-nitro-modules'
+import { NitroBiometryType, type NitroBiometricsOptions } from './type'
 
-export interface BiometricAuth extends HybridObject<{ ios: 'swift', android: 'kotlin' }> {
-  sum(num1: number, num2: number): number
+export interface NitroBiometrics extends HybridObject<{ ios: 'swift', android: 'kotlin' }> {
+    authenticate(options: NitroBiometricsOptions): Promise<boolean>
+    isAvailable(): Promise<boolean>
+    getAvailableBiometryType(): Promise<NitroBiometryType>
 }

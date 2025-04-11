@@ -1,4 +1,4 @@
-package com.biometricauth;
+package com.nitrobiometrics;
 
 import android.util.Log;
 import androidx.annotation.Nullable;
@@ -8,13 +8,11 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.module.model.ReactModuleInfoProvider;
 import com.facebook.react.TurboReactPackage;
-import com.margelo.nitro.core.HybridObject;
-import com.margelo.nitro.biometricauth.BiometricAuthOnLoad;
+import com.margelo.nitro.nitrobiometrics.*;
 
 import java.util.HashMap;
-import java.util.function.Supplier;
 
-public class BiometricAuthPackage extends TurboReactPackage {
+public class NitroBiometricsPackage extends TurboReactPackage {
   @Nullable
   @Override
   public NativeModule getModule(@NonNull String name, @NonNull ReactApplicationContext reactContext) {
@@ -28,6 +26,6 @@ public class BiometricAuthPackage extends TurboReactPackage {
   }
 
   static {
-    BiometricAuthOnLoad.initializeNative();
+    NitroBiometricsOnLoad.initializeNative();
   }
 }

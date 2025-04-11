@@ -1,21 +1,21 @@
 {
   "$schema": "https://nitro.margelo.com/nitro.schema.json",
   "cxxNamespace": [
-    "biometricauth"
+    "nitrobiometrics"
   ],
   "ios": {
-    "iosModuleName": "BiometricAuth"
+    "iosModuleName": "NitroBiometrics"
   },
   "android": {
     "androidNamespace": [
-      "biometricauth"
+      "nitrobiometrics"
     ],
-    "androidCxxLibName": "BiometricAuth"
+    "androidCxxLibName": "NitroBiometrics"
   },
   "autolinking": {
-    "BiometricAuth": {
-      "swift": "HybridBiometricAuth",
-      "kotlin": "HybridBiometricAuth"
+    "NitroBiometrics": {
+      "swift": "HybridNitroBiometrics",
+      "kotlin": "HybridNitroBiometrics"
     }
   },
   "ignorePaths": [

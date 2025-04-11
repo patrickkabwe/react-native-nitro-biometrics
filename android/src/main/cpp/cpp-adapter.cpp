@@ -1,6 +1,6 @@
 #include <jni.h>
-#include "BiometricAuthOnLoad.hpp"
+#include "NitroBiometricsOnLoad.hpp"
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void*) {
-  return margelo::nitro::biometricauth::initialize(vm);
+  return margelo::nitro::nitrobiometrics::initialize(vm);
 }

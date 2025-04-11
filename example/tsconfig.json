@@ -4,7 +4,7 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "react-native-biometric-auth": ["../src"]
+      "react-native-nitro-biometrics": ["../src"]
     }
   }
 }
